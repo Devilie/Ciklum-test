@@ -1,0 +1,314 @@
+/* Eric Meyer's CSS Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* End of Eric Meyer's CSS Reset */
+
+html {
+	height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+	display: block;
+}
+
+body {
+	font: 14px/18px Arial, sans-serif;
+	height: 100%;
+	background-color: #D7D7D7;
+	color: #191919;
+}
+
+.wrapper {
+	min-width: 320px;
+	max-width: 1000px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+
+.header {
+	height: 200px;
+	background: url("img/header_image.png") no-repeat;
+	position: relative;
+}
+
+
+/*modal*/
+
+.modal-overlay {
+	background: #000;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1000;
+	opacity: .5;
+}
+
+.modal-visible {
+	background: #fff;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-top: -200px;
+	overflow: hidden;
+	border-radius: 6px;
+	z-index: 2000;
+	width: 400px;
+	padding: 0px;
+	margin-left: -250px;
+}
+
+.get-username-modal button {
+	float: right;
+	line-height: 20px;
+	margin: 1.2em;
+	border: none;
+	background: transparent;
+}
+
+.get-username-modal button[type="button"]:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.get-username-modal h2 {
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+	color: #555;
+}
+
+.modal-content {
+	padding: 1em 2em;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: WhiteSmoke;
+}
+
+.modal-content .user-n-id {
+	margin-top: 1em;
+	border-radius: 6px;
+
+}
+
+
+/*modal*/
+
+.header .head-user-id {
+	position: absolute;
+	padding: 10px;
+	top: 30px;
+	right: 30px;
+	width: auto;
+	height: 60px;
+}
+
+.header .head-user-id .user-id-name {
+	display: block;
+	margin-left: 20px;
+	font-size: 18px;
+	font-style: italic;
+}
+
+.main-menu {
+	position: absolute;
+	bottom: -10px;
+	right: 0;
+}
+
+.main-menu .menu-list {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.main-menu .menu-list .menu-item {
+	display: inline-block;
+	width: 120px;
+	height: 40px;
+	border-radius: 8px;
+	margin-left: 4px;
+	overflow: hidden;
+	background-color: rgb(255, 252, 245);
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+
+.main-menu .menu-list .menu-item .item-link {
+	color: #191919;
+	padding: 10px;
+	text-decoration: none;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+
+.content {
+	padding: 0 0 100px;
+	background-color: rgb(255, 252, 245);
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+.footer {
+	margin: -100px auto 0;
+	min-width: 320px;
+	max-width: 1000px;
+	height: 100px;
+	position: relative;
+}
