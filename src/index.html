@@ -7,7 +7,9 @@
 	<title>Q&ampA</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
+	<link rel="shortcut icon" href="img/qa-favicon.png" type="image/png">
 	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="reset.css">
 </head>
 
 <body>
@@ -15,31 +17,49 @@
 	<div class="wrapper">
 
 		<header class="header">
-			<div class="head-user-id">Добро пожаловать <span class="user-id-name">Username</span></div>
+			<a href="index.html" class="main"></a>
+			<div class="head-user-id">
+				<p>Добро пожаловать <span class="user-id-name"> </span></p>
+			</div>
 			<div class="get-username-modal" style="display:none;">
 				<div class="modal-overlay"></div>
 				<div class="modal-visible">
-				  <h2>Здравствуйте</h2>
+					<h2>Здравствуйте</h2>
 					<div class="modal-content">
-					  <p>Введите пожалуйста ваш никнейм для Вашей дальнейшей аутентификации</p>
-					  <input type="text" name="user-name-id" class="user-n-id" autofocus>
+						<p>Введите пожалуйста никнейм для Вашей дальнейшей аутентификации</p>
+						<input type="text" name="user-name-id" class="user-n-id" size="24" maxlength="20" placeholder="от 3 до 20 симовлов" autofocus>
 					</div>
-				  <button type="button" class="modal-username-btn">Сохранить</button>
-			  </div>
+					<input type="button" class="modal-username-btn" value="Сохранить">
+				</div>
 			</div>
 			<nav class="main-menu">
 				<ul class="menu-list">
-					<li class="menu-item"><a class="item-link" href="#all-questions">Все вопросы</a></li>
-					<li class="menu-item"><a class="item-link" href="#all-with-answers">С ответами</a></li>
-					<li class="menu-item"><a class="item-link" href="#no-answers">Без ответов</a></li>
+					<li class="menu-item"><a class="item-link all-link" href="#all-questions">Все вопросы</a></li>
+					<li class="menu-item"><a class="item-link all-ans-link" href="#all-with-answers">С ответами</a></li>
+					<li class="menu-item"><a class="item-link no-ans-link" href="#no-answers">Без ответов</a></li>
 				</ul>
 			</nav>
 		</header>
 		<!-- .header-->
 
 		<main class="content">
-		<!-- Добавление вопроса -> диалоговым окном
+			<!-- Добавление вопроса -> диалоговым окном -> 1/2
 			 Информация отображается согласно выбранного типа -> Все/без ответа/с ответом  -->
+			<img src="img/question.png" alt="Задать вопрос" class="asc-q">
+			<div class="asc-q-modal" style="display:none;">
+				<div class="modal-overlay"></div>
+				<form class="modal-visible">
+					<h2>Ваш вопрос:</h2>
+					<p class="close-modal">X</p>
+					<div class="modal-content">
+						<textarea name="question-text" class="asc-q-text"></textarea>
+					</div>
+					<input type="submit" value="Добавить" class="q-modal-submit">
+				</form>
+			</div>
+			<article class="all-q"></article>
+			<article class="all-ans"></article>
+			<article class="no-asw"></article>
 		</main>
 		<!-- .content -->
 
