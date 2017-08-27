@@ -43,7 +43,7 @@ function setUsername() {
             }
         }
         usernameDiv.innerHTML = userNameId;
-    } else if (userNameId) {} else {
+    } else {
         usernInpt.focus();
     }
 }
@@ -53,6 +53,6 @@ function inputFormated() {
 }
 
 function formatStr(str) {
-    str = str.trim().replace(/\s+/g, " ").replace(/\n+/g, " ");
+    str = str.trim().replace(/\s+/g, " ");
     return str;
 }

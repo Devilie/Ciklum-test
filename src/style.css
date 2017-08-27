@@ -1,4 +1,3 @@
-
 html {
 	height: 100%;
 }
@@ -32,11 +31,14 @@ body {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
+	background-color: rgb(255, 252, 245);
 }
+
 input {
 	margin-top: 10px;
 	border-radius: 6px;
 }
+
 
 /* Header
 -----------------------------------------------------------------------------*/
@@ -46,13 +48,19 @@ input {
 	position: relative;
 }
 
-.header .main {
+.header .main-page-link {
 	position: absolute;
 	background: url("img/header_image.png") no-repeat;
 	left: 0;
 	width: 500px;
 	height: 200px;
 }
+
+.header .main-page-link h1 {
+	visibility: hidden;
+	line-height: 200px;
+}
+
 
 /*modal*/
 
@@ -92,7 +100,7 @@ input {
 
 .get-username-modal .modal-username-btn:hover {
 	cursor: pointer;
-	box-shadow: #D7D7D7;
+	box-shadow: rgb(215, 215, 215);
 	text-decoration: underline;
 }
 
@@ -110,6 +118,7 @@ input {
 	background: WhiteSmoke;
 }
 
+
 /*modal*/
 
 .header .head-user-id {
@@ -124,14 +133,14 @@ input {
 
 .header .head-user-id .user-id-name {
 	display: block;
-	margin-top: 6px; 
+	margin-top: 6px;
 	font-size: 18px;
 	font-style: italic;
 }
 
 .main-menu {
 	position: absolute;
-	bottom: -10px;
+	bottom: -1px;
 	right: 0;
 }
 
@@ -145,12 +154,12 @@ input {
 	width: 120px;
 	height: 40px;
 	border-radius: 8px;
-	margin-left: 4px;
-	overflow: hidden;
-	background-color: rgb(255, 252, 245);
+	margin-right: 4px;
+	border: 1px solid #D7D7D7;
+	box-shadow: inset 0px 0px 30px 0px rgba(215, 215, 215, 1);
 	font-weight: 600;
 	font-size: 13px;
-	line-height: 36px;
+	line-height: 40px;
 	text-transform: uppercase;
 }
 
@@ -166,27 +175,84 @@ input {
 
 .content {
 	padding: 30px 0 100px;
-	background-color: rgb(255, 252, 245);
+	border-top: 1px solid #D7D7D7;
 }
- .content .asc-q {
-	 margin-left: 50px;
-	 border-radius: 10px;
-	 width: 50px;
-	 height: 50px;
-	 cursor: pointer;
- }
+
+.content .asc-q {
+	margin-left: 50px;
+	border-radius: 10px;
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+}
+
+
 /* Modal -> asc question*/
- .asc-q-modal h2 {
+
+.asc-q-modal {
+	position: relative;
+}
+
+.asc-q-modal h2 {
 	font-size: 16px;
 	line-height: 30px;
 	text-align: center;
 	color: #555;
 }
+
 .asc-q-modal .asc-q-text {
-	width: 200px;
-	height: 20px auto;
+	width: 430px;
+	height: 100px;
 }
-/* Modal -> asc question*/
+
+.asc-q-modal .modal-visible {
+	width: 500px;
+}
+
+.asc-q-modal .modal-visible .q-modal-submit {
+	margin: 8px 10px;
+	float: right;
+	cursor: pointer;
+	width: 80px;
+	height: 28px;
+}
+
+
+/* Question page --------------------------------*/
+
+.content .q-holder {
+	display: block;
+	margin-bottom: 30px;
+	min-height: 200px;
+}
+
+.content .q-holder .question-title {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 600;
+	margin-left: 100px;
+}
+
+.content .q-holder img {
+	width: 100px;
+	height: auto;
+	margin-right: 40px;
+	float: right;
+}
+
+
+.content .q-holder .q-user-id {
+	font-size: 16px;
+	font-weight: 600;
+	display: inline-block;
+}
+
+.content .q-holder,
+.ans-holder {
+	margin: 20px;
+}
+
+
 /* Footer
 -----------------------------------------------------------------------------*/
 
@@ -196,4 +262,5 @@ input {
 	max-width: 1000px;
 	height: 100px;
 	position: relative;
+	border-top: 1px solid #D7D7D7;
 }
